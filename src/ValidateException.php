@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
 /**
  * Class ValidateException
  *
- * @package Inhere\Validate
- * @deprecated please use Inhere\Validate\Exception\ValidateException
+ * @package Shonan\Validate
+ * @deprecated please use Shonans\Validate\Exception\ValidateException
  */
 class ValidateException extends Exception\ValidateException
 {

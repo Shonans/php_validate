@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: Inhere
+ * User: Shonan
  * Date: 2017/11/26 0026
  * Time: 00:51
  */
 
-namespace Inhere\Validate\Filter;
+namespace Shonans\Validate\Filter;
 
-use Inhere\Validate\Helper;
+use Shonans\Validate\Helper;
 use InvalidArgumentException;
 use function function_exists;
 use function is_array;
@@ -20,7 +20,7 @@ use function trim;
 /**
  * Trait FilteringTrait
  *
- * @package Inhere\Validate\Filter
+ * @package Shonan\Validate\Filter
  */
 trait FilteringTrait
 {

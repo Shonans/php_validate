@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest\Sample;
+namespace Shonans\ValidateTest\Sample;
 
-use Inhere\Validate\ValidationTrait;
+use Shonans\Validate\ValidationTrait;
 
 /**
  * Class DataModel - custom extend the trait 'ValidationTrait' like the class 'Validation'

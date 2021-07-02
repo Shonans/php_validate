@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
 /**
  * Class GlobalOption TODO
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  */
 final class GlobalOption
 {

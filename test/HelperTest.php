@@ -1,22 +1,22 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-31
  * Time: 10:08
  */
 
-namespace Inhere\ValidateTest;
+namespace Shonans\ValidateTest;
 
-use Inhere\Validate\Filter\Filters;
-use Inhere\Validate\Helper;
+use Shonans\Validate\Filter\Filters;
+use Shonans\Validate\Helper;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class HelperTest
  *
- * @package Inhere\ValidateTest
+ * @package Shonan\ValidateTest
  */
 class HelperTest extends TestCase
 {
@@ -68,7 +68,7 @@ class HelperTest extends TestCase
     {
         $data = [
             'user' => [
-                'name' => 'inhere',
+                'name' => 'shonan',
                 'age'  => 1,
             ]
         ];

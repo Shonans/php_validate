@@ -7,10 +7,10 @@
  * 后期通过类似 $_GET['test']='help'; 将不会存在 输入数据常量中(INPUT_GET 没有test项)。
  */
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
-use Inhere\Validate\Exception\ArrayValueNotExists;
-use Inhere\Validate\Traits\NameAliasTrait;
+use Shonans\Validate\Exception\ArrayValueNotExists;
+use Shonans\Validate\Traits\NameAliasTrait;
 use function array_diff;
 use function array_key_exists;
 use function array_keys;
@@ -54,7 +54,7 @@ use const JSON_ERROR_NONE;
 /**
  * Class Validators
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  */
 class Validators
 {

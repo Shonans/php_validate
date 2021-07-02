@@ -1,16 +1,16 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2017-03-17
  * Time: 11:26
  */
 
-namespace Inhere\Validate\Traits;
+namespace Shonans\Validate\Traits;
 
-use Inhere\Validate\Filter\Filters;
-use Inhere\Validate\Helper;
-use Inhere\Validate\Validators;
+use Shonans\Validate\Filter\Filters;
+use Shonans\Validate\Helper;
+use Shonans\Validate\Validators;
 use InvalidArgumentException;
 use function array_shift;
 use function function_exists;
@@ -30,7 +30,7 @@ use const UPLOAD_ERR_OK;
  * - user custom validators
  * - some validators of require context data.
  *
- * @package Inhere\Validate\Traits
+ * @package Shonan\Validate\Traits
  */
 trait ScopedValidatorsTrait
 {

@@ -1,19 +1,19 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-10
  * Time: 23:59
  */
 
-namespace Inhere\ValidateTest\Sample;
+namespace Shonans\ValidateTest\Sample;
 
-use Inhere\Validate\FieldValidation;
+use Shonans\Validate\FieldValidation;
 
 /**
  * Class FieldSample
  *
- * @package Inhere\ValidateTest\Sample
+ * @package Shonan\ValidateTest\Sample
  */
 class FieldSample extends FieldValidation
 {

@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\Validate\Validator;
+namespace Shonans\Validate\Validator;
 
 /**
  * Class AbstractValidator
- * @package Inhere\Validate\Validator
+ * @package Shonan\Validate\Validator
  */
 abstract class AbstractValidator implements ValidatorInterface
 {

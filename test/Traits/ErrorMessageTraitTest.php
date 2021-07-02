@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest\Traits;
+namespace Shonans\ValidateTest\Traits;
 
-use Inhere\Validate\FieldValidation;
-use Inhere\Validate\Validation;
+use Shonans\Validate\FieldValidation;
+use Shonans\Validate\Validation;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -105,7 +105,7 @@ class ErrorMessageTraitTest extends TestCase
     }
 
     /**
-     * for https://github.com/inhere/php-validate/issues/10
+     * for https://github.com/shonans/php-validate/issues/10
      */
     public function testForIssues10(): void
     {

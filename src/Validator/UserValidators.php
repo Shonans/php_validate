@@ -1,19 +1,19 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-20
  * Time: 00:03
  */
 
-namespace Inhere\Validate\Validator;
+namespace Shonans\Validate\Validator;
 
 use function trim;
 
 /**
  * Class UserValidators - user custom add global validators
  *
- * @package Inhere\Validate\Validator
+ * @package Shonan\Validate\Validator
  */
 final class UserValidators
 {

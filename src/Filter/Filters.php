@@ -4,10 +4,10 @@
  * 过滤器(strainer/filter): 过滤数据，去除不合要求的数据，返回过滤后的数据(始终返回字符串, 全部不符合返回空字符串)
  */
 
-namespace Inhere\Validate\Filter;
+namespace Shonans\Validate\Filter;
 
-use Inhere\Validate\Helper;
-use Inhere\Validate\Traits\NameAliasTrait;
+use Shonans\Validate\Helper;
+use Shonans\Validate\Traits\NameAliasTrait;
 use function abs;
 use function array_map;
 use function array_unique;
@@ -53,7 +53,7 @@ use const PHP_VERSION_ID;
 /**
  * Class Filters
  *
- * @package Inhere\Validate\Filter
+ * @package Shonan\Validate\Filter
  */
 final class Filters
 {

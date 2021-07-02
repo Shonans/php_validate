@@ -1,17 +1,17 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-20
  * Time: 00:10
  */
 
-namespace Inhere\Validate\Filter;
+namespace Shonans\Validate\Filter;
 
 /**
  * Class UserFilters - user custom add global filters
  *
- * @package Inhere\Validate\Filter
+ * @package Shonan\Validate\Filter
  */
 final class UserFilters
 {

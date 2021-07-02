@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: Inhere
+ * User: Shonan
  * Date: 2016/2/19 0019
  * Time: 23:35
  */
 
-namespace Inhere\ValidateTest\Sample;
+namespace Shonans\ValidateTest\Sample;
 
-use Inhere\Validate\Validation;
+use Shonans\Validate\Validation;
 
 /**
  * Class PageRequest

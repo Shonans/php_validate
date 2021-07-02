@@ -1,19 +1,19 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2017-11-07
  * Time: 10:04
  */
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
 use InvalidArgumentException;
 
 /**
  * Class AbstractValidation
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  */
 abstract class AbstractValidation implements ValidationInterface
 {

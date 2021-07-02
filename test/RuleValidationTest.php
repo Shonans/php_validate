@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest;
+namespace Shonans\ValidateTest;
 
-use Inhere\Validate\RuleValidation;
-use Inhere\Validate\RV;
-use Inhere\Validate\Validation;
-use Inhere\ValidateTest\Validator\AdemoValidatorTest as AdemoValidator;
+use Shonans\Validate\RuleValidation;
+use Shonans\Validate\RV;
+use Shonans\Validate\Validation;
+use Shonans\ValidateTest\Validator\AdemoValidatorTest as AdemoValidator;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Runner\Version;
 use Throwable;
@@ -32,7 +32,7 @@ class RuleValidationTest extends TestCase
 
         $this->assertFalse($v->hasRule());
 
-        $rv = RuleValidation::make(['name' => 'inhere'], [
+        $rv = RuleValidation::make(['name' => 'shonan'], [
             []
         ]);
         try {
@@ -44,7 +44,7 @@ class RuleValidationTest extends TestCase
             );
         }
 
-        $rv = RuleValidation::make(['name' => 'inhere'], [
+        $rv = RuleValidation::make(['name' => 'shonan'], [
             ['name']
         ]);
         try {
@@ -646,7 +646,7 @@ class RuleValidationTest extends TestCase
     }
 
     /**
-     * @link https://github.com/inhere/php-validate/issues/13
+     * @link https://github.com/shonans/php-validate/issues/13
      */
     public function testIssue13(): void
     {
@@ -689,7 +689,7 @@ class RuleValidationTest extends TestCase
     }
 
     /**
-     * @link https://github.com/inhere/php-validate/issues/17
+     * @link https://github.com/shonans/php-validate/issues/17
      */
     public function testIssues17(): void
     {
@@ -725,7 +725,7 @@ class RuleValidationTest extends TestCase
     }
 
     /**
-     * @link https://github.com/inhere/php-validate/issues/20
+     * @link https://github.com/shonans/php-validate/issues/20
      */
     public function testIssues20(): void
     {
@@ -758,7 +758,7 @@ class RuleValidationTest extends TestCase
     }
 
     /**
-     * @link https://github.com/inhere/php-validate/issues/21
+     * @link https://github.com/shonans/php-validate/issues/21
      */
     public function testIssues21(): void
     {

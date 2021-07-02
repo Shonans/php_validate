@@ -1,17 +1,17 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-24
  * Time: 00:11
  */
 
-namespace Inhere\Validate\Traits;
+namespace Shonans\Validate\Traits;
 
 /**
  * Trait NameAliasTrait
  *
- * @package Inhere\Validate\Traits
+ * @package Shonan\Validate\Traits
  */
 trait NameAliasTrait
 {

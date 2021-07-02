@@ -1,7 +1,7 @@
 {
   "name": "shonans/php-validate",
   "type": "library",
-  "description": "fixed with inhere's php-validate,eqiai.net only",
+  "description": "fixed with shonan's php-validate,eqiai.net only",
   "keywords": [
     "php-library",
     "library",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Moon",
+      "name": "Shonan",
       "email": "421894300@qq.com",
       "homepage": "https://github.com/Shonans"
     }
@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Inhere\\Validate\\": "src/"
+      "Shonans\\Validate\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Inhere\\ValidateTest\\": "test/"
+      "Shonans\\ValidateTest\\": "test/"
     }
   },
   "scripts": {

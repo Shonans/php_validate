@@ -1,20 +1,20 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2017-11-24
  * Time: 18:20
  */
 
-namespace Inhere\ValidateTest;
+namespace Shonans\ValidateTest;
 
-use Inhere\Validate\Filter\Filtration;
+use Shonans\Validate\Filter\Filtration;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class FiltrationTest
  *
- * @covers \Inhere\Validate\Filter\Filtration
+ * @covers \Shonan\Validate\Filter\Filtration
  */
 class FiltrationTest extends TestCase
 {

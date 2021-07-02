@@ -1,19 +1,19 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: Inhere
+ * User: Shonan
  * Date: 2018/1/8 0008
  * Time: 21:47
  */
 
-namespace Inhere\Validate\Validator;
+namespace Shonans\Validate\Validator;
 
 use Closure;
 
 /**
  * Class Rule
  *
- * @package Inhere\Validate\Validator
+ * @package Shonan\Validate\Validator
  * @TODO
  */
 final class Rule

@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\Validate\Locale;
+namespace Shonans\Validate\Locale;
 
-use Inhere\Validate\Validator\GlobalMessage;
+use Shonans\Validate\Validator\GlobalMessage;
 
 /**
  * Class LocaleZhCN
  *
- * @package Inhere\Validate\Locale
+ * @package Shonan\Validate\Locale
  */
 class LocaleZhCN
 {

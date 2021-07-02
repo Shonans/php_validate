@@ -1,16 +1,16 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest;
+namespace Shonans\ValidateTest;
 
-use Inhere\Validate\Validation;
-use Inhere\Validate\ValidationTrait;
+use Shonans\Validate\Validation;
+use Shonans\Validate\ValidationTrait;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class ValidationTraitTest
  *
- * @package Inhere\ValidateTest
+ * @package Shonan\ValidateTest
  */
 class ValidationTraitTest extends TestCase
 {
@@ -88,7 +88,7 @@ class ValidationTraitTest extends TestCase
     // }
 
     /**
-     * @var \array[][] see PR https://github.com/inhere/php-validate/pull/19
+     * @var \array[][] see PR https://github.com/shonans/php-validate/pull/19
      */
     public $deepData = [
         'companies' => [
@@ -191,12 +191,12 @@ class ValidationTraitTest extends TestCase
 
     public function testBeforeAndAfter(): void
     {
-        $v = Validation::make(['name' => 'inhere'], [
+        $v = Validation::make(['name' => 'shonan'], [
             ['name', 'string', 'min' => 3, 'filter' => 'trim|upper']
         ]);
 
         $v->onBeforeValidate(function (Validation $v) {
-            $this->assertSame('inhere', $v->getRaw('name'));
+            $this->assertSame('shonan', $v->getRaw('name'));
             $this->assertNull($v->getSafe('name'));
 
             return true;
@@ -219,16 +219,16 @@ class ValidationTraitTest extends TestCase
 
     public function testRuleBeforeAndAfter(): void
     {
-        $v = Validation::make(['name' => 'inhere'], [
+        $v = Validation::make(['name' => 'shonan'], [
             [
                 'name',
                 'string',
                 'min'    => 3,
                 'before' => function ($value) {
-                    return $value === 'inhere';
+                    return $value === 'shonan';
                 },
                 'after' => function ($value) {
-                    $this->assertSame('inhere', $value);
+                    $this->assertSame('shonan', $value);
                     return true;
                 }
             ]

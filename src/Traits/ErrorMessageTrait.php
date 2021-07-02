@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\Validate\Traits;
+namespace Shonans\Validate\Traits;
 
 use Closure;
-use Inhere\Validate\Helper;
-use Inhere\Validate\Validator\GlobalMessage;
-use Inhere\Validate\Validators;
+use Shonans\Validate\Helper;
+use Shonans\Validate\Validator\GlobalMessage;
+use Shonans\Validate\Validators;
 use function array_merge;
 use function array_pop;
 use function array_shift;
@@ -20,8 +20,8 @@ use function strtr;
 /**
  * trait ErrorMessageTrait
  *
- * @author  inhere
- * @package Inhere\Validate\Traits
+ * @author  shonan
+ * @package Shonan\Validate\Traits
  */
 trait ErrorMessageTrait
 {

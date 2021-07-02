@@ -13,7 +13,7 @@
 - 方便的获取错误信息，验证后的安全数据获取(只会收集有规则检查过的数据)
 - 已经内置了大量的常用的验证器[内置验证器](#built-in-validators)
 - 规则设置参考 `yii`, `laravel`, `Respect/Validation`
-- 独立的过滤器 `Inhere\Validate\Filter\Filtration`，可单独用于数据过滤
+- 独立的过滤器 `Shonan\Validate\Filter\Filtration`，可单独用于数据过滤
 
 ## 两种规则配置方式
 
@@ -61,10 +61,10 @@ composer require Shonans/php-validate
 
 ### 方式1: 直接使用类 `Validation`
 
-需要快速简便的使用验证时，可直接使用 `Inhere\Validate\Validation`
+需要快速简便的使用验证时，可直接使用 `Shonan\Validate\Validation`
 
 ```php
-use Inhere\Validate\Validation;
+use Shonans\Validate\Validation;
 
 class SomeController
 {
@@ -93,12 +93,12 @@ class SomeController
 
 ### 方式2: 继承类 `Validation`
 
-创建一个新的class，并继承 `Inhere\Validate\Validation`。用于一个（或一系列相关）请求的验证, 相当于 laravel 的 表单请求验证
+创建一个新的class，并继承 `Shonan\Validate\Validation`。用于一个（或一系列相关）请求的验证, 相当于 laravel 的 表单请求验证
 
 > 此方式是最为完整的使用方式，可以配置规则，设置字段翻译，设置自定义的错误消息等
 
 ```php
-use Inhere\Validate\Validation;
+use Shonans\Validate\Validation;
 
 class PageRequest extends Validation
 {
@@ -220,7 +220,7 @@ $db->save($safeData);
 
 ### 方式3: 使用trait `ValidationTrait`
 
-创建一个新的class，并使用 Trait `Inhere\Validate\ValidationTrait`。
+创建一个新的class，并使用 Trait `Shonan\Validate\ValidationTrait`。
 
 > 此方式是高级自定义的使用方式, 可以方便的嵌入到其他类中。
 
@@ -229,7 +229,7 @@ $db->save($safeData);
 ```php
 class DataModel
 {
-    use \Inhere\Validate\ValidationTrait;
+    use \Shonan\Validate\ValidationTrait;
 
     protected $data = [];
 
@@ -302,7 +302,7 @@ class UserController
 - 一个闭包
 - 一个函数名称
 - 一个当前验证类的方法名
-  - 在继承了 `Inhere\Validate\Validation` 的子类添加验证方法. 请看上面的 [使用方式1](#how-to-use2)
+  - 在继承了 `Shonan\Validate\Validation` 的子类添加验证方法. 请看上面的 [使用方式1](#how-to-use2)
 - 一个通过 `Validation->addValidator()` 添加的临时验证器
 - 一个通过 `Validator\UserValidators::set` 注册的全局验证器
 - 一个实现了 `Validator\ValidatorInterface` 的对象
@@ -341,10 +341,10 @@ $v = Validation::make($_POST,[
 
 定义一个闭包验证类进行验证,这种方法能提高验证方法的复用性
 
-> 别忘了继承 `\Inhere\Validate\Validator\AbstractValidator`,和实现必须方法`validate`
+> 别忘了继承 `\Shonan\Validate\Validator\AbstractValidator`,和实现必须方法`validate`
 
 ```php
-class AdemoValidator extends \Inhere\Validate\Validator\AbstractValidator
+class AdemoValidator extends \Shonan\Validate\Validator\AbstractValidator
 {
 
     public function validate($value, $data): bool
@@ -370,7 +370,7 @@ class AdemoValidator extends \Inhere\Validate\Validator\AbstractValidator
 > 该方法与`onBeforeValidate`&`onAfterValidate`有冲突
 
 ```php
-use Inhere\Validate\Validation;
+use Shonans\Validate\Validation;
 
 class PageValidation extends Validation
 {
@@ -390,9 +390,9 @@ class PageValidation extends Validation
 * 方式2: `onBeforeValidate`&`onAfterValidate`
 
 ```php
-use Inhere\Validate\Validation;
+use Shonans\Validate\Validation;
 
-$v = Validation::make(['name' => 'inhere'], [
+$v = Validation::make(['name' => 'shonan'], [
     ['name', 'string', 'min' => 3, 'filter' => 'trim|upper']
 ]);
 
@@ -558,7 +558,7 @@ $v->validate();
 
 ```php
 ['users.*.id', 'each', 'required', 'isEmpty' => function($value) {
-    if ($value instanceof \Inhere\Validate\ArrayValueNotExists) {
+    if ($value instanceof \Shonan\Validate\ArrayValueNotExists) {
         return true;
     }
     // your code here ...

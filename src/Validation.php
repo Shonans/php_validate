@@ -1,17 +1,17 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: Inhere
+ * User: Shonan
  * Date: 2016/3/3 0003
  * Time: 23:19
  */
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
 /**
  * Class Validation
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  *
  * Usage:
  * $vd = Validation::make($_POST, [

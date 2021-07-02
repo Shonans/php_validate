@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
 /**
  * Class RV - the short name of the rule validation
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  */
 final class RV extends Validation
 {

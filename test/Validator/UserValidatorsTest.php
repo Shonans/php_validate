@@ -1,20 +1,20 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-23
  * Time: 01:27
  */
 
-namespace Inhere\ValidateTest\Validator;
+namespace Shonans\ValidateTest\Validator;
 
-use Inhere\Validate\Validator\UserValidators;
+use Shonans\Validate\Validator\UserValidators;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class UserValidatorsTest
  *
- * @package Inhere\ValidateTest\Validator
+ * @package Shonan\ValidateTest\Validator
  */
 class UserValidatorsTest extends TestCase
 {

@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\Validate\Exception;
+namespace Shonans\Validate\Exception;
 
 use RuntimeException;
 
 /**
  * Class ValidateException
  *
- * @package Inhere\Validate\Exception
+ * @package Shonan\Validate\Exception
  */
 class ValidateException extends RuntimeException
 {

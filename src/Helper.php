@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2017-03-17
  * Time: 11:26
  */
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
-use Inhere\Validate\Filter\Filters;
+use Shonans\Validate\Filter\Filters;
 use InvalidArgumentException;
 use function array_key_exists;
 use function array_search;
@@ -40,7 +40,7 @@ use const ENT_COMPAT;
 /**
  * Class Helper
  *
- * @package Inhere\Validate\Utils
+ * @package Shonan\Validate\Utils
  */
 class Helper
 {

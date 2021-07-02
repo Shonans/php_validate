@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest\Validator;
+namespace Shonans\ValidateTest\Validator;
 
-use Inhere\Validate\Validator\GlobalMessage;
+use Shonans\Validate\Validator\GlobalMessage;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Runner\Version;
 use function version_compare;
@@ -10,7 +10,7 @@ use function version_compare;
 /**
  * Class GlobalMessageTest
  *
- * @package Inhere\ValidateTest\Validator
+ * @package Shonan\ValidateTest\Validator
  */
 class GlobalMessageTest extends TestCase
 {

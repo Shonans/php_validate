@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2017-11-07
  * Time: 10:04
  */
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
 /**
  * Class RuleValidation
@@ -20,7 +20,7 @@ namespace Inhere\Validate;
  * ]
  * ```
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  */
 class RuleValidation extends Validation
 {

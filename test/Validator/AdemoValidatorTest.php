@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest\Validator;
+namespace Shonans\ValidateTest\Validator;
 
-use Inhere\Validate\Validator\AbstractValidator;
+use Shonans\Validate\Validator\AbstractValidator;
 
 /**
  * Class ClassValidator
  *
- * @package Inhere\ValidateTest\Validator
+ * @package Shonan\ValidateTest\Validator
  */
 class AdemoValidatorTest extends AbstractValidator
 {

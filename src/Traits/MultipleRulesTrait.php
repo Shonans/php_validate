@@ -1,16 +1,16 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-20
  * Time: 00:34
  */
 
-namespace Inhere\Validate\Traits;
+namespace Shonans\Validate\Traits;
 
 use Generator;
-use Inhere\Validate\Filter\Filters;
-use Inhere\Validate\Helper;
+use Shonans\Validate\Filter\Filters;
+use Shonans\Validate\Helper;
 use InvalidArgumentException;
 use function array_map;
 use function array_merge;
@@ -25,7 +25,7 @@ use function trim;
  * Trait MultipleRulesTrait
  * - allow add multiple rules like Laravel.
  *
- * @package Inhere\Validate\Traits
+ * @package Shonan\Validate\Traits
  */
 trait MultipleRulesTrait
 {

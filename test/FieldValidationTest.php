@@ -1,17 +1,17 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest;
+namespace Shonans\ValidateTest;
 
-use Inhere\Validate\FieldValidation;
-use Inhere\Validate\FV;
-use Inhere\ValidateTest\Sample\FieldSample;
+use Shonans\Validate\FieldValidation;
+use Shonans\Validate\FV;
+use Shonans\ValidateTest\Sample\FieldSample;
 use PHPUnit\Framework\TestCase;
 use Throwable;
 
 /**
  * Class FieldValidationTest
  *
- * @package Inhere\ValidateTest
+ * @package Shonan\ValidateTest
  */
 class FieldValidationTest extends TestCase
 {
@@ -35,7 +35,7 @@ class FieldValidationTest extends TestCase
 
     public function testRuleCollectError(): void
     {
-        $rv = FieldValidation::make(['name' => 'inhere'], [
+        $rv = FieldValidation::make(['name' => 'shonan'], [
             []
         ]);
         try {
@@ -44,7 +44,7 @@ class FieldValidationTest extends TestCase
             $this->assertSame('Please setting the field(string) to wait validate! position: rule[0]', $e->getMessage());
         }
 
-        $rv = FieldValidation::make(['name' => 'inhere'], [
+        $rv = FieldValidation::make(['name' => 'shonan'], [
             ['name']
         ]);
         try {
@@ -115,7 +115,7 @@ class FieldValidationTest extends TestCase
     public function testOnScene(): void
     {
         $data = [
-            'user' => 'inhere',
+            'user' => 'shonan',
             'pwd'  => '123456',
             'code' => '1234',
         ];
@@ -133,7 +133,7 @@ class FieldValidationTest extends TestCase
     public function testScenarios(): void
     {
         $data = [
-            'user' => 'inhere',
+            'user' => 'shonan',
             'pwd'  => '123456',
             'code' => '1234',
         ];
@@ -143,7 +143,7 @@ class FieldValidationTest extends TestCase
         $this->assertEmpty($v->getErrors());
 
         $data = [
-            'user' => 'inhere',
+            'user' => 'shonan',
             'pwd'  => '123456',
             'code' => '12345',
         ];
@@ -158,7 +158,7 @@ class FieldValidationTest extends TestCase
     }
 
     /**
-     * @link https://github.com/inhere/php-validate/issues/22
+     * @link https://github.com/shonans/php-validate/issues/22
      */
     public function testIssues22(): void
     {
@@ -210,7 +210,7 @@ class FieldValidationTest extends TestCase
     }
 
     /**
-     * @link https://github.com/inhere/php-validate/issues/36
+     * @link https://github.com/shonans/php-validate/issues/36
      */
     public function testIssues36(): void
     {

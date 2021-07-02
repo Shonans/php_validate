@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: Inhere
+ * User: Shonan
  * Date: 2016/3/3 0003
  * Time: 23:19
  */
 
-namespace Inhere\Validate\Filter;
+namespace Shonans\Validate\Filter;
 
 use InvalidArgumentException;
 use function array_merge;
@@ -15,7 +15,7 @@ use function is_string;
 /**
  * Class Filtration
  *
- * @package Inhere\Validate\Filter
+ * @package Shonan\Validate\Filter
  * usage:
  *
  * $data = Filtration::make($_POST, [

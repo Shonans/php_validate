@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-11
  * Time: 00:10
  */
 
-namespace Inhere\ValidateTest\Filter;
+namespace Shonans\ValidateTest\Filter;
 
-use Inhere\Validate\Filter\Filtration;
+use Shonans\Validate\Filter\Filtration;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use function trim;
@@ -16,7 +16,7 @@ use function trim;
 /**
  * Class FiltrationTest
  *
- * @package Inhere\ValidateTest\Filter
+ * @package Shonan\ValidateTest\Filter
  */
 class FiltrationTest extends TestCase
 {

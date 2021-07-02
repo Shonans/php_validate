@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2019-01-23
  * Time: 01:26
  */
 
-namespace Inhere\ValidateTest\Traits;
+namespace Shonans\ValidateTest\Traits;
 
-use Inhere\Validate\Validation;
+use Shonans\Validate\Validation;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use stdClass;
@@ -139,7 +139,7 @@ class ScopedValidatorsTest extends TestCase
         $vs2 = ['john', 'tom'];
 
         // 如果指定的另一个字段（ anotherField ）值等于任何一个 value 时，此字段为 必填 (refer laravel)
-        $ok = $v->requiredIf('name', 'inhere', 'nick', $vs2);
+        $ok = $v->requiredIf('name', 'shonan', 'nick', $vs2);
         $this->assertTrue($ok);
         $ok = $v->requiredIf('name', '', 'nick', $vs2);
         $this->assertFalse($ok);
@@ -149,7 +149,7 @@ class ScopedValidatorsTest extends TestCase
         // 如果指定的另一个字段（ anotherField ）值等于任何一个 value 时，此字段为 不必填(refer laravel)
         $ok = $v->requiredUnless('name', '', 'nick', $vs2);
         $this->assertNull($ok);
-        $ok = $v->requiredUnless('name', 'inhere', 'nick', $vs1);
+        $ok = $v->requiredUnless('name', 'shonan', 'nick', $vs1);
         $this->assertTrue($ok);
     }
 

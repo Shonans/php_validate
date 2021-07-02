@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
-use Inhere\Validate\Exception\ValidateException;
+use Shonans\Validate\Exception\ValidateException;
 use function array_merge;
 use function count;
 use function is_int;
@@ -13,7 +13,7 @@ use function is_string;
 /**
  * Class Valid - Simple Data Validator TODO
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  */
 class Valid
 {

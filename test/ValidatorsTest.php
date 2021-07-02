@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest;
+namespace Shonans\ValidateTest;
 
-use Inhere\Validate\Validators;
+use Shonans\Validate\Validators;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 
 /**
  * Class ValidatorsTest
- * @package Inhere\ValidateTest
+ * @package Shonan\ValidateTest
  */
 class ValidatorsTest extends TestCase
 {

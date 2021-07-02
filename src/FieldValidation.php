@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
- * User: inhere
+ * User: shonan
  * Date: 2017-11-07
  * Time: 10:04
  */
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
-use Inhere\Validate\Traits\MultipleRulesTrait;
+use Shonans\Validate\Traits\MultipleRulesTrait;
 
 /**
  * Class FieldValidation
@@ -19,7 +19,7 @@ use Inhere\Validate\Traits\MultipleRulesTrait;
  * $vd->validate();
  * ```
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  */
 class FieldValidation extends AbstractValidation
 {

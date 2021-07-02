@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Inhere\ValidateTest\Filter;
+namespace Shonans\ValidateTest\Filter;
 
-use Inhere\Validate\Filter\Filters;
+use Shonans\Validate\Filter\Filters;
 use PHPUnit\Framework\TestCase;
 use const FILTER_FLAG_ENCODE_HIGH;
 use const FILTER_FLAG_ENCODE_LOW;
@@ -11,7 +11,7 @@ use const FILTER_FLAG_STRIP_HIGH;
 /**
  * Class FiltersTest
  *
- * @package Inhere\ValidateTest\Filter
+ * @package Shonan\ValidateTest\Filter
  */
 class FiltersTest extends TestCase
 {

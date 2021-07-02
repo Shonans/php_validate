@@ -1,17 +1,17 @@
 <?php declare(strict_types=1);
 /**
- * @author inhere
+ * @author shonan
  * @date   : 2015-08-11
  */
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
 use stdClass;
 
 /**
  * Interface ValidationInterface
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  */
 interface ValidationInterface
 {

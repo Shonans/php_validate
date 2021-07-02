@@ -1,22 +1,22 @@
 <?php declare(strict_types=1);
 /**
  * Created by sublime 3.
- * Auth: Inhere
+ * Auth: Shonan
  * Date: 14-9-28
  * Time: 10:35
  */
 
-namespace Inhere\Validate;
+namespace Shonans\Validate;
 
 use Closure;
 use Generator;
-use Inhere\Validate\Exception\ArrayValueNotExists;
-use Inhere\Validate\Filter\FilteringTrait;
-use Inhere\Validate\Filter\Filters;
-use Inhere\Validate\Traits\ErrorMessageTrait;
-use Inhere\Validate\Traits\ScopedValidatorsTrait;
-use Inhere\Validate\Validator\UserValidators;
-use Inhere\Validate\Validator\ValidatorInterface;
+use Shonans\Validate\Exception\ArrayValueNotExists;
+use Shonans\Validate\Filter\FilteringTrait;
+use Shonans\Validate\Filter\Filters;
+use Shonans\Validate\Traits\ErrorMessageTrait;
+use Shonans\Validate\Traits\ScopedValidatorsTrait;
+use Shonans\Validate\Validator\UserValidators;
+use Shonans\Validate\Validator\ValidatorInterface;
 use InvalidArgumentException;
 use stdClass;
 use function array_keys;
@@ -40,7 +40,7 @@ use const PHP_INT_MIN;
 /**
  * Trait ValidationTrait
  *
- * @package Inhere\Validate
+ * @package Shonan\Validate
  * property array $data To verify the data list. please define it on main class. 待验证的数据列表
  */
 trait ValidationTrait

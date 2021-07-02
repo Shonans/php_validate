@@ -10,8 +10,8 @@ date_default_timezone_set('Asia/Shanghai');
 
 $libDir = dirname(__DIR__);
 $npMap  = [
-    'Inhere\\Validate\\'     => $libDir . '/src/',
-    'Inhere\\ValidateTest\\' => $libDir . '/test/',
+    'Shonan\\Validate\\'     => $libDir . '/src/',
+    'Shonan\\ValidateTest\\' => $libDir . '/test/',
 ];
 
 spl_autoload_register(function ($class) use ($npMap) {
