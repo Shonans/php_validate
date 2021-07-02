@@ -318,7 +318,7 @@ trait ErrorMessageTrait
             $message = $this->findMessage($field, $rawName) ?: GlobalMessage::getDefault();
             // is array. It's defined multi error messages
         } elseif (is_array($message)) {
-            $message = $message[$rawName] ?? $this->findMessage($field, $rawName);
+            $message = $message[$rawName] ?? ( $message[$field]??$this->findMessage($field, $rawName));
 
             if (!$message) { // use default
                 return strtr(GlobalMessage::getDefault(), $params);

@@ -1,7 +1,7 @@
 {
   "name": "shonans/php-validate",
   "type": "library",
-  "description": "fixed with inhere's php-validate",
+  "description": "fixed with inhere's php-validate,eqiai.net only",
   "keywords": [
     "php-library",
     "library",
@@ -19,7 +19,7 @@
     }
   ],
   "require": {
-    "php": ">7.1.0",
+    "php": ">7.3.*",
     "toolkit/stdlib": "~1.0"
   },
   "require-dev": {
