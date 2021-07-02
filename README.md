@@ -1,11 +1,5 @@
 # PHP Validate
 
-[![License](https://img.shields.io/packagist/l/inhere/php-validate.svg?style=flat-square)](LICENSE)
-[![Php Version](https://img.shields.io/badge/php-%3E=7.1-brightgreen.svg?maxAge=2592000)](https://packagist.org/packages/inhere/php-validate)
-[![Latest Stable Version](http://img.shields.io/packagist/v/inhere/php-validate.svg)](https://packagist.org/packages/inhere/php-validate)
-[![Build Status](https://travis-ci.org/inhere/php-validate.svg?branch=master)](https://travis-ci.org/inhere/php-validate)
-[![Coverage Status](https://coveralls.io/repos/github/inhere/php-validate/badge.svg?branch=master)](https://coveralls.io/github/inhere/php-validate?branch=master)
-[![Github Actions Status](https://github.com/inhere/php-validate/workflows/Unit-tests/badge.svg)](https://github.com/inhere/php-validate/actions)
 
 一个简洁小巧且功能完善的php验证、过滤库。
 
@@ -53,18 +47,14 @@ validate 同时支持两种规则配置方式，对应了两种规则的收集�
 
 > 更多配置示例请参看 [像Laravel一样配置](https://github.com/inhere/php-validate/wiki/config-rules-like-laravel)
 
-## 项目地址
-
-- **github** <https://github.com/inhere/php-validate.git>
-- **gitee** <https://gitee.com/inhere/php-validate.git>
 
 > **注意：** master 分支是要求 `php7.1+` 的(推荐使用)。`1.x` 分支是支持php5的代码分支,但是基本上不再维护。
 
 ## 安装
 
 ```bash
-composer require inhere/php-validate
-// composer require inhere/php-validate ^2.2
+composer require Shonans/php-validate
+// composer require Shonans/php-validate ^2.2
 ```
 
 ## 立即使用
@@ -992,7 +982,3 @@ phpunit
 
 [MIT](LICENSE)
 
-## 我的其他项目
-
-- [inhere/console](https://github.com/inhere/php-validate) 轻量且功能丰富的命令行应用, 控制台交互，工具库
-- [inhere/sroute](https://github.com/inhere/php-srouter) 轻量且快速的HTTP请求路由库
