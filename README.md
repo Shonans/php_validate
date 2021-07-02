@@ -45,8 +45,6 @@ validate 同时支持两种规则配置方式，对应了两种规则的收集�
 ]
 ```
 
-> 更多配置示例请参看 [像Laravel一样配置](https://github.com/inhere/php-validate/wiki/config-rules-like-laravel)
-
 
 > **注意：** master 分支是要求 `php7.1+` 的(推荐使用)。`1.x` 分支是支持php5的代码分支,但是基本上不再维护。
 
