@@ -1,0 +1,43 @@
+{
+  "name": "Shonans/php-validate",
+  "type": "library",
+  "description": "fixed with inhere's php-validate",
+  "keywords": [
+    "php-library",
+    "library",
+    "validate",
+    "form-validate",
+    "validation"
+  ],
+  "homepage": "https://github.com/Shonans/php-validate",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Moon",
+      "email": "421894300@qq.com",
+      "homepage": "https://github.com/Shonans"
+    }
+  ],
+  "require": {
+    "php": ">7.1.0",
+    "toolkit/stdlib": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Inhere\\Validate\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Inhere\\ValidateTest\\": "test/"
+    }
+  },
+  "scripts": {
+    "check-cs": "./php-cs-fixer fix --dry-run --diff --diff-format=udiff",
+    "cs-fix": "./php-cs-fixer fix",
+    "test": "vendor/bin/phpunit"
+  }
+}
